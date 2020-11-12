@@ -1,0 +1,275 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+#background{
+    position: absolute;
+    z-index: -9999;
+    width: 100%;
+    background-attachment: fixed;
+    margin-top: 60px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#cabecalho {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    z-index: 99999;
+}
+
+.footer{
+    margin-top: 65px;
+    width: 100%;
+    height: 50px;
+    padding: 10px; 
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+#logo-container{
+    display: flex;
+}
+
+#clinic-name{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 13px; 
+    color: rgb(0, 107, 218);
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+#menu{
+    margin: 0px auto 0px ;
+}
+
+#menu-lista{
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 820px;
+    justify-content: space-between;
+   
+}
+
+#menu-lista li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+#menu-lista a{
+    color: rgb(78, 78, 78);
+    text-decoration: none; 
+    transition: 0.2s;
+}
+
+#menu-lista a:hover{
+    color: rgb(0, 108, 224);
+    text-decoration: underline;
+}
+
+/*BOX DA PAGINA INICIAL*/
+.initial-box{
+    position: relative;    
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 500px;
+    margin:80px auto;
+    padding: 15px;
+    margin-left: 650px;
+}
+.initial-box h1{
+    font-size: 28pt;
+    margin-bottom: 0px;
+}
+
+.initial-box h2{
+    font-size: 14pt;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+
+/*LOGO DA FITA NOVEMBRO AZUL*/
+#logo-fita-azul{
+    height: 206px;
+    margin: 90px 20px 20px 20px;
+   
+}
+/*BOX DO FORMULARIO - PAGINA DE AGENDAMENTO*/
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 450px;
+    height: 350px;
+    margin:100px 110px;
+    padding: 15px;
+}
+
+/*INPUTS DO FORM*/
+.small-input{
+    display: grid;
+   grid-template-columns: 120px 120px;
+}
+input{
+    height: 35px;
+    margin-bottom: 10px;
+    border-style: none;
+    background-color: rgb(219, 219, 219);
+}
+
+input:focus{
+    background-color: white;
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: rgb(56, 56, 56);
+  }
+  
+.input-number{
+    width: 100px;
+}
+
+/*Botões do form*/
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.btn-form{
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-form:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(0, 209, 255);
+    transform: translateY(-5px);
+}
+
+.btnV{
+    background-color: rgb(0, 139, 46);
+}
+
+.btnL{
+    background-color: rgb(146, 0, 0);
+}
+
+.btnL:hover{
+    background-color: red;
+    color: white;
+}
+
+.main-hr{
+    width: 300px;
+    height: 4px;
+    border-style: none;
+    float: left;
+    margin-left: 0px;
+    background-color:rgb(0, 107, 218);
+}
+
+.hr2{
+    width: 200px;
+}
+
+#h1-form{
+    margin:20px auto 0px 0px;
+}
+
+.btn{
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    
+    border-radius: 5px;
+    background-color: rgb(0, 107, 218);
+    transition: 0.2s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(0, 209, 255);
+    transform: translateY(-5px);
+}
+
+button:focus{
+    outline: none;
+} 
+
+/*Container de cards com info dos usuarios*/
+article.card-container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+   
+    /* width: 315px;
+    height: 200px; */
+
+}
+
+article.box-cards {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards {
+    color: white;
+    width: 320px;
+    height: 220px;
+    margin: 0px;
+    padding:10px;
+}
+.cards:hover{
+    transform: translateY(-10px); 
+}
+.card1{
+    background-color:  rgb(0, 94, 194); 
+}
+.card2{
+    background-color:  rgb(0, 123, 255); 
+}
+.card3{
+    background-color:  rgb(58, 152, 252); 
+}
