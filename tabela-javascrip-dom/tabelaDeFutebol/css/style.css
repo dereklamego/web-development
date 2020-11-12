@@ -1,0 +1,85 @@
+input{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+    color: white;
+   /* background-color: #439928;*/
+    background: url("../img/soccerwallpaperweb2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    color: #00ffe7;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+h1#titulo{
+    font-size: 52px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(49, 49, 49)); /*defini o background do h1*/
+    -webkit-background-clip: text;  /*selecionei quais elementos iriam receber esse background */
+    -webkit-text-fill-color: transparent; /*deixei o texto transparent para aparecer o backgound gradiente*/
+    margin: 20px;
+}
+
+div#app{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: #00ffe7;
+    border-style: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    color: black;
+    font-weight: 600;
+}
+button:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #028b7e;
+}
+
+button:focus{
+    outline: 0 !important;
+}
+
+table#tabela{
+    box-shadow: 2px 4px 10px black;
+    border-collapse: collapse;
+    width: 800px; 
+    margin-top: 30px;
+}
+
+td,th{
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+    background-color: #171c1f;
+}
+table tr:nth-child(even) { /*Seleciona os elementos irmãos(nesse caso tr) de posição impar, e aplica o background*/
+    background-color:#2a3338;
+}
+
+table tr:nth-child(odd) { /*Seleciona os elementos irmãos(nesse caso tr) de posição par, e aplica o background*/
+    background-color:#3d4449;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
