@@ -54,3 +54,4 @@ function clearInput(){
     tel.value=""
     idade.value=""
 }
+
