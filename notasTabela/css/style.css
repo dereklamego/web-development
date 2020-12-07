@@ -1,0 +1,15 @@
+table{
+    border-collapse: collapse;
+    margin: 5vw;
+    box-shadow: 2px 2px 8px rgb(119, 118, 118);
+}
+
+td,th{
+    text-align: center;
+    padding: 1vw;
+}
+
+th{
+    background-color: #ffff53;
+    border-bottom: 1px solid black;
+}
